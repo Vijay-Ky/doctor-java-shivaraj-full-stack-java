@@ -1,0 +1,13 @@
+Core Java - 18-20 days
+SQL - 1 week
+JDBC - 2-3 days
+HTML - 1
+CSS - 4
+JS - 1 week
+Bootstrap - 1-2 days
+JQuery - 1 day
+React - 2 week
+Servlets and JSP - 1 week
+Spring and Hibernate - 20 days
+Project - 10 days
+Git - 1-2

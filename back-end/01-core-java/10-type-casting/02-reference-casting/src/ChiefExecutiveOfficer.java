@@ -1,0 +1,3 @@
+class ChiefExecutiveOfficer extends Company
+{
+}

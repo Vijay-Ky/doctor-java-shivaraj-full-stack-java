@@ -1,0 +1,2353 @@
+
+----------------------Introduction--------------------------------
+
+- Java is a object-oriented, general-purpose, high-level programming language.
+  developed by James Gosling and his team at Sun Microsystems and released in   1995.
+- Oracle Corporation aquired SunMicrosystems in January 27, 2010.
+- SunMicrosystem was conducting exams based on Java SCJP  (SunCertifiedJavaProffessional)
+  Now Oracle conducting those exams in the name OCJP  (OracleCertifiedJavaProffessional)
+- The Initial name of Java is Oak. Later they changed it to Java  (NameofTheCoffeeFlavour).
+- you can use Java programming for developing mobile applications, enterprise web application, embedded systems Ex: Elevator(lift), WashingMachines, CarMusicPlayers, DeskTopApplications,BigDataTechnologies(DataProcessing) - ApacheHadoop and ApacheSpark(BigDataFrameworks), ScientificApplications, GameDevelopment. 
+
+- Java Programming laguage is also called as Java platform.
+- Java is a high level programming language.
+
+- Open Sourcing: In 2006, Sun Microsystems released the source code of Java under the GNU General Public License (GPL) as OpenJDK, allowing developers to view, modify, and contribute to its development. 
+
+High Level programming language
+---------------------------------
+- Programmer friendly
+- easy to understand
+Ex: C++, Java, Python, JavaScript, Ruby
+
+Low Level Programming Language
+----------------------------------
+- Machine friendly
+- difficult to understand
+Note: Low level programming language provides a close representation of the hardware and allows direct control over the system's resources.
+
+Ex: Assembly Language, COBOL, FORTRAN
+
+- Machine can only understand 0s and 1s 
+
+- Since computers can't able to understand high level programming languages, compilers and interpreters are used to for translation, translating from high level to machine level code.
+
+Translators
+------------
+Converting the code from high level language to machine laguage.
+
+Translators two types
+--------------------
+1. Compilers
+2. Interpreters
+
+
+Compilers VS Interpreters
+---------------------------
+1. Compiled Programming Languages -> C, C++, Java
+2. Interpreted Programming Languge -> Python
+3. In case of compilers: compiler takes the entire code at once and it will generate the machine level code.
+4. In case of Interpreter: interpreter converts the high level laguage to the machine level code line by line. NOT AT ONCE
+
+JAVA IS BOTH COMPILED AND INTERPRETED -> THAT WILL BE DECIDED BY THE JVM(Java Virtual Machine)
+
+- JDK (software development kit) that includes everything needed to develop, compile and debug java applications, includes various development libraries.
+
+-JRE (SoftwarePackage) provides necessary runtime environment for executing Java applications.it includes JVM as well.
+
+-JVM - Provides an execution environment for JavaAppliations.
+
+Summarry:: The JDK is used by developers for Java Application Development. The JRE is required for end-users to run JavaApplications, and the JVM is responsible for executing Java bytecode and provides plarform independence.
+
+- Java is object-oriented Programming Language NOT object-based
+- Python is object based, Interpreted. Everything in case of python is object only.
+
+-Java is Developed By James Gowsling in the year of 1995 while he was working at Sun Microsystems.
+-The initial name of Java is Oak, Later they changed it to "Java" Java means, a flavor of coffee.
+
+-James Gowsling is also called as Father of Java Programming Language.
+
+Feature of Java programming Language
+----------------------------------
+1. Object Oriented
+2. Platform Indepent
+3. Secured
+4. Auto Memory Management 
+5. Exception Handling Mechanism
+6. Multi-Threaded Programming Language
+7. High Performance
+8. Portable
+
+
+1. Object Oriented
+---------------
+An object is a real world entity, that is having properties and behaviours.
+Ex: Dog -> Object
+    properties -> name, age, gender, weight, breed, color
+    behaviours -> run, eat, sleep, bark, bite, chase a cat
+This type of developement is not possible in case of C programming laguage(it is procedural language)
+
+2. Platform Independent
+-----------------------
+Java is Write Once and Run Anywhere(WORA) that means achitechture neutral.
+This is possible because of Byte Code. 
+Initially Java Compiler will compile the java program and produces a ".class" file.
+Inside that .class file byte code will be available. that byte code (that .class file) is platform independent. 
+There is an internal mechanism called JVM (Java Virtual Machine) that is available inside the JDK(Java Development Kit) software itself.
+The JVM will be converting that Byte code to the corresponding machine level code.
+The byte code that we have developed by using any operating system, can ran on any other operating system. There is no need of changing anything to source code. THIS IS NOT POSSIBLE IN CASE OF C
+-JDK itself is not platform independent but the byte code is platform independent. 
+
+3. Secured
+-------------
+- We can avoid security issue in case of Java, bcz in java there is no pointers concept.(in case of pointers concept, if we miss manage the memory by using pointers then there will be a securiy issue, hackers might breach the data and also pointers concept is very confusing) C PROGRAMMING LAGUAGE USES POINTERS BUT NOT JAVA
+ 
+4. Auto Memory Management
+-------------------------
+- In case of Java There is a auto-memory management by using Garbage collector. 
+ 
+5. Exception Handling Mechanism
+----------------------------------
+- To maintain the normal flow of execution we have Exception Handling
+THIS IS NOT AVAILABLE IN C
+
+6. Multi-Threaded Programming Language
+--------------------------------------
+- To increase the efficiency of the CPU and parallel execution. 
+THIS IS NOT AVAILABLE IN C
+
+7. High Performance
+-------------------------------
+- By using JIT(Just In-Time Compiler)
+
+8. Portable
+-----------
+- Refere to Achitecture Neutrality (byte can be easily run on any platform) we can take the byte code and run it on any plaform.
+
+
+- Most of the companies will be choosing Java to build their business applications.
+
+
+The Lastest of Java is 20 
+
+- The Latest edition of Java might not be supported by all the platforms(AWS, Azure, Google Cloud)
+- The industry standard and which is supported by all the platforms is Java 8
+- That is why we will download and install and work with Java 8
+- We will be also learning about all the new features and new concepts that has been introduced in the latest editions of java.
+
+Java SE - Standard Edition
+
+Java SE Development Kit 8u371 
+u == update
+
+JDK software is available for 
+---------------------
+Linux
+macOS
+Solaris
+Windows
+
+According to the system architecture you need to select the installer
+it can *86 (32 bit) or *64 (64 bit) operating system, or processor
+ check - right click on this PC -> under system type you will find that.
+
+*86 is compatible with only 32 bit system architecture if the system architecture is 32 bit only. 
+if your system is 64 bit then both *86 and *64 is compatible.
+
+
+select this file jdk-8u371-windows-x64.exe
+
+
+Along with JDK software - > JRE and also JVM
+
+JDK - Development purpose
+JRE - Production purpose
+JVM - Provides an environment to run(execute) byte code 
+
+(Inside the JRE JVM will be there)
+
+- Currently Java No.1 Development Platform(Business and Banking Applications)
+- So many devices are running by using Java. Ex: Car Music Systems, lifts, Washing Machines(as embedded softwares), Android TVs, Smart Phones etc..
+
+
+to find out the java version that is installed in our system trigger
+java -version
+
+software version analysis
+major  minor  updates or patches
+1   .   8  .  0_371
+
+After the installation of JDK the first thing we need to do is setting the path environment varible.(or updating the path environment variable)
+
+D>Developmentsoftwares>JDK8>bin || copy this folder location from the address bar
+
+Right click on this pc -> properties -> AdvancedSystemSettings -> EnvironmentVariable - UserLevel -> select the path variable if already existing
+and click on edit -> click on new -> paste the copied path of bin folder -> click on ok and in all the remaining windows.
+
+if the path variable is created yet -> under user variable section -> click on new ->variable name 'path' uppercase of lowercase or mixed case but dont give any spaces in the beginning or in the middle or at end.
+->variable value -> paste the copied bin folder location 
+
+close the previously opened command prompt(before the path setting or path updation). open a new command prompt and trigger javac
+
+Need of setting the path
+------------------
+in order to specify the commands location(java, javac) to the command window we need to set the path.
+
+
+Installing EditPlus for the development and Learning Java Concepts through programs
+-----------------------------------------------------------------------------------
+1. Go to https://www.editplus.com/ -> Select Download from top menu 
+   you will get these two options
+   
+	EditPlus 5.7 Evaluation Version
+	● Download EditPlus 5.7 (64-bit) == if your system is 64 bit architecture, then download this.
+	● More options... ==> Select this if your system is 32 bit architecture. then download.
+2. Before Installing, create a folder called EditPlus inside the DevelopmentSoftwares folder.
+   (in windows to create a new folder shortcut cntl + shift + n)
+    while developing the folder name or file name follow the CamelCase Ex:(EditPlus). the first letter     of each word will be in the upper-case without giving any space.
+Note:: All the develoment softwares we are installing in the D drive(any drive other than C drive) because we need to lower the OS load, because the OS drive is already having OS files. its not recommended to give more load to that drive.
+3. Start the installation by double-clicking on editplus.exe file(downloaded).
+   (Note: '.exe' is an executable file in the windows system)
+4. Installation Windows
+   1. Accept the Licence Agreement.
+   2. click on yes for the windows notification(for making the changes to the system).
+   3. Next window: specify directories where you want to install. in this window just leave all the       selected check boxes as it is, then for the program directory, already the installer is       pointing default loacation 'C:\Program Files\EditPlus' instead going with this default location       select the folder location that we already created 'D:\Developmentsoftwares\EditPlus' for this       select the three '...' which is visible after the path indicator.  
+      - Expand This PC -> Expand D drive -> DevelopmentSoftwares -> Then Select EditPlus folder ->         then click on OK
+      - installation program directory should be looking like this 'D:\Developmentsoftwares\EditPlus'
+      - click on 'Start Copy'
+   4. In the Next window you will get a success message. Just click on OK.
+
+5. Go to desktop(cntrl + D(all the opened windows will be minimized, desktop will be visible)). 
+6. Double click on EditPlus application shortcut 
+7. When you open the EditPlus for the first time after installation you will get License AgreementWindow Again, you just need to click on Yes to accept.
+8. You will get Set Directories window - this one is related to the Internal EditPlus files storage.
+   you just need to click on OK
+9. you will get a small window saying that 'Setup will overwrite the existing syntax files' Continue?
+   Just click on Yes.
+10. EditPlus is not 100% free but we can able to use as free for the life time with minor task.
+11. you will get Enter Registration Code window -> Trial -> you will get a small window called     evaluation version. you just need to drag that window to the bottom of the screen, till it is not     visible any more. Then maximize the main window. close the side bar(file Explorer) by dragging to     the left side.
+12. We need to make some configuration to the EditPlus.
+    click on Tools -> Preferences -> select General -> Fonts -> FontFamily = consolas, FontStyle =     Bold, FontSize = 22
+    on the left hand-side categories, Select File Uncheck the option 'create the backup file while     saving'(To avoid EditPlus creating backup files for all the files). Then click on Apply and click     on OK.(To save the changes)
+
+
+Developing our first java program using simple notepad
+-----------------------------------------------------
+1. On the desktop create a folder called JavaDemo.
+2. Open the windows NotePad(click on windows icon(bottom left corner)start typing notepad and pin to    task bar. and click on the notepad icon on the task bar)
+3. To increase the font size in the notepad press cntl + mouse(scrollUp).
+4. start developing the HelloWorld Java Program
+class HelloWorld
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World!");
+    }
+}
+5. copy the class name 'HelloWorld' -> File -> Save As -> Desktop > JavaDemo -> Enter the file name
+  'Just paste class name whichever you copied'-> compulsary include the '.java' extension.
+   Note: For the Java files .java is the extension(Java files will be identified with the .java file    extension). -> click on save.
+6. Open the command prompt -> make the prompt to point to the 'Desktop > JavaDemo' Folder
+   Note: Folder == Directory by using command cd Desktop/JavaDemo or if it is not working use the     command cd OneDrive/Desktop/JavaDemo.
+   Note: cd (change directory)
+7. To compile the java program we need to trigger the command called javac, this will be invoking the    java compiler to check for the syntax correctness of the java file.
+   Note: javac (java compiler)
+   Ex: javac JavaFileName.java == javac HelloWorld.java
+8. If the program is syntactically proper, then a '.class' file will be generated in the same folder   (JavaDemo). Otherwise we will get syntax error. we need to resolve that error, save the file and    again we need to trigger 'javac JavaFileName.java'.
+9. check the JavaDemo folder for '.class' file. select that .class file and Open that file by right    clicking and select EditPlus. 
+   Note: if you cant able to see the extenstions of the files then click on view -> select the check      box of file name extensions.
+   We cant able to read the contents of the .class file. this is exactly what we call the byte code.
+   inside the .class byte code will be there. we need to execute the .class file.
+10. For Executing the .class file -> use the java command 'java name_of_the_class_file'
+    Ex: java HelloWorld
+11. From the same location 'C:\Users\vijay\Desktop\JavaDemo>' trigger 'java HelloWorld'
+    you will be getting 'Hello World!' as the output
+    Note: you should not include any .class or .java extension while executing the class file.
+12. Once you trigger java HelloWorld -> JVM(Java Virtual Machine) will be invoking the main method of     HelloWorld class and executing the print statement which is producting Hello World! as the output.
+   
+   Some More Configuration to the EditPlus
+   ------------------------------------------
+  1. Problem - if we are having more content in the same line then we need to scroll to the right-hand                side.
+     Sol - To avoid this problem we need to turn on word-wrap 
+     steps  -  click on Document -> Select word-wrap
+  2. To get more Editor space turn off -> Ruler, that is visible on top of the Editor space.
+     steps: click on view -> uncheck 'Ruler'
+  3. To get the FullScreenWindow -> just press F11(toggle for interchange)
+
+
+Note: if you making any changes to the java file(even minor changes like adding or removing the space)       then compulsory you need to save that file and again you need to compile that file before       executing with java command.
+
+
+      Windows NotePad  VS EditPlus
+ --------------------------------------
+1. While saving the files Auto Extenstion will not be applied in case of notepad.
+2. There is no syntax highlighting feature(color highlighting) in notepad so we may not be easily able    to recognize keywords, identifiers, inbuilt classes.
+3. There are no extra fetures in notepad which are available in the EditPlus like LineNumber, Ruler,        Easy navigation between files using inbuilt package explorer and so many other tools that are very      much required for the efficient and faster development of programs.
+
+   Task --> Develop 5 Programs with the class and file name as
+   1. HelloWorld1 -> output should be Hello World 1!
+   2. HelloWorld2 -> output should be Hello World 2!
+   3. HelloWorld3 -> output should be Hello World 3!
+   4. HelloWorld4 -> output should be Hello World 4!
+
+Note: No need of opening and closing the command prompts again and again for each and every program you can just use the same command prompt for all the programs.
+
+Standard Way of Developing Java Programs 
+-----------------------------------
+1. Create a folder in any of the drive other than OS drive, Name it as JavaCourse.
+2. Inside the JavaCourse create another folder LanguageFundamentals -> application1 -> src & classes
+3. src stands for source(folder)
+4. We are creating a seperate folders. for keeping .java files in the src folder and to keep    generated .class files in the classes folder.
+   Reason: We are seperating '.class' files from '.java' files.
+             '.java' files in a seperate folder called 'src'.
+	 '.class' files in a seperate folder called 'classes'.
+              This is the standard way of developing our java programs.
+
+First Approach
+----------------
+C:\Users\vijay>G:
+
+G:\>cd SomeFolderName
+
+G:\SomeFolderName>cd JavaCourseJune
+
+G:\SomeFolderName\JavaCourseJune>cd LanguageFundamentals
+
+G:\SomeFolderName\JavaCourseJune\LanguageFundamentals>cd application1
+
+G:\SomeFolderName\JavaCourseJune\LanguageFundamentals\application1>cd src
+
+G:\SomeFolderName\JavaCourseJune\LanguageFundamentals\application1\src> 
+
+- Open the EditPlus File -> New -> Java
+- you will be gettting the default code (recommended to delete(ctrl + A and backspace) and type       again).
+- File -> Save As -> Save it in the 'G:\SomeFolderName\JavaCourseJune\LanguageFundamentals            \application1\src>' folder with FileName as A (.java extension is optional here bcz already              editplus selecting Save as type to .java)
+-compile the file using javac FileName.java
+-if our program syntactically proper then .class file will be generated. In this case .class file is generated in the same folder(src).
+- To get the FileNameExtenstions in the windows FileExplorer Just View -> Select the checkbox for 
+   FileNameExtenstions.
+  Type: JAVA File == JAVA Source File (Java Source Code File)
+          CLASS File == Compiled version of Java Source File (.class file) Which contains byte code.
+          we cant able to read it, so we are chieving security. This file will be processed by the JVM.
+          This file is platform independent(specifically the content of this file).
+- Both the files .java and .class are present in the same src folder itself, which is not a standard way   develpment.
+
+Second Approach
+---------------
+C:\Users\vijay>cd G:\SomeFolderName\JavaCourseJune\LanguageFundamentals\application1\src
+
+C:\Users\vijay>G:
+
+G:\SomeFolderName\JavaCourseJune\LanguageFundamentals\application1\src>
+
+Third Approach
+-------------
+1. select and copy the address of src folder location from the windows explorer.
+   Ex: G:\SomeFolderName\JavaCourseJune\LanguageFundamentals\application1\src
+2. open a new command prompt type cd and paste the content you just copied.
+   Ex: cd G:\SomeFolderName\JavaCourseJune\LanguageFundamentals\application1\src
+3. if you are still not that drive and folder, just type the name of the drive and colon Ex: G:
+
+Fourth Approach
+---------------
+1. Go to the src folder location in the windows explorer and clear the address bar content.
+2. Just type cmd in the upper case or lower case and press enter.
+   In this location command prompt will be opening.
+3. to increase the font size of the command prompt just press cntrl + mouse(scroll up)
+
+
+Note: - create a new java file in editplus press Alt + F and right arrow and select java
+        - To save file cntrl + S 
+Note - to clear the command prompt window just trigger the command 'cls'
+
+   To seperate the .class files from the .java files while compiling
+--------------------------------------------------------------
+1. javac -d ../classes B.java
+   javac == java compiler
+   -d == option we are using along with the javac command.
+           this option is for interacting with the file system.
+   ../classes ==> currently we are in the src folder. to go back to the previous folder application1                     folder, and select classes folder. In this location we need to keep the generated .class                file.
+   B.java ==> the fileName we wish to compile.
+
+**Note: you need to trigger this command from the src location only**
+
+Runnnig the .class file
+-------------------
+1st Approach
+------------
+src>cd ../classes
+application1\classes> java B
+(java classFileName)
+
+To go back to the src
+----------------
+cd ../src
+
+2nd and best Approach (easier)
+------------
+java -cp ../classes B
+
+ java ==> to invoke the JVM
+   -cp ==> option 'classpath' -> it will be seaching for .class files in the directory.
+   ../classes B ==>   currently we are in the src folder. to go back to the previous folder application1                     folder, and select classes folder. there you will find class file, that file we need to 	                   execute.
+
+Task  ==> Create 4 java files and compile and execute using the steps showed above
+--------------------------------------------------------------------
+1. C.java
+2. D.java
+3. E.java
+4. F.java 
+
+Note: To rename the file or folder press F2 in windows.
+
+public class demostration
+----------------------
+1. public is a keyword in java.
+   Note: - keywords are having speacial meaning to the java language itself.
+          - Keywords are also called as reserved words.
+           There are about 50 keyword are available in Java 8
+            1. abstract
+	2. assert
+	3. boolean
+	4. break
+	5. byte
+	6. case
+	7. catch
+	8. char
+	9. class
+	10. const(NOT USED)
+	11. continue
+	12. default
+	13. do
+	14. double
+	15. else
+ 	16. enum
+	17. extends
+	18. final
+	19. finally
+	20. float
+	21. for
+	22. goto(NOT USED)
+	23. if
+	24. implements
+	25. import
+	26. instanceof
+	27. int
+	28. interface
+	29. long
+	30. native
+	31. new
+	32. package
+	33. private
+	34. protected
+	35. public
+	36. return
+ 	37. short
+	38. static
+	39. strictfp
+	40. super
+	41. switch
+	42. synchronized
+	43. this
+	44. throw
+	45. throws
+	46. transient
+	47. try
+	48. void
+	49. volatile
+	50. while
+**Note: There are 3 reserved literals -> 1.null 2. true 3. false **
+**Note: each keyword is having a specific functionality**
+**Note: 'goto' and 'const' are NOT USED(deprecated) even though these two keywords are present in the Java 8, we are not using those keywords. due to the guidlines provided by the Java Developers. because of language improvements reasons**
+
+- while compiling a java file you should compile it with java file name itself, NOT the class name which   is present in the java file.
+- In a Java file if you are declaring a class with public keyword then that public class name should be   the file name, otherwise  you will get error.
+- If we are not declaring a class as public then file name can be anything. 
+  while compiling we need to compile with filename but while executing we need to execute with the        class name which generated inside the classes folder.
+
+- The initial task of the JVM is to invoke the main method of that class.
+- Main method is considered as starting point of a program(execution starts from the main   method)**Generally 
+  Note: before the main method we can also execute some of the members which are static   members.
+
+class B 
+{
+}
+-defined
+-concrete
+-implemented
+-complete body
+
+Note: the above program is syntactically proper.
+
+Note: public keyword is used as an access specifier.
+
+- if the class is not having a main method we cant able to run that class.
+- in one java file we can able to develop any no. of classes.
+- if none of the classes are declared with public keyword then file name can be anything.
+- if at least one class is declared as 'public' then that class name must be the file name.
+- in one java file maximum 0 or 1 public class is allowed not more than that.
+
+for the folder seperation in windows '\' will be used
+------------------------------------------
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\2.public_class\classes
+
+in the windows only but in the command prompt while the user specifying the path should be be using '/' thats only recognized in the command prompt for navigation by the user
+-------------------------------------
+src>java -cp ../classes T
+
+Note: even some of the cross platform softwares will supporting both the characters '/''\'
+
+Note: In the browser address bar we will be using '/' for seperation
+       Ex: https://www.google.com/chrome/download
+Note: Linux will be using '/' for directory seperation
+
+NOTE:  Learn typing ==> https://www.speedcoder.net/
+         you should maintain at least 60WPM
+         
+	IDENTIFIERS - In Java
+----------------------------------
+Defintion: - To identify something by using a name in java programming we can use                          identifiers.
+	- An identifier is a name given to a class, method, variable and other               programming elements to uniquely identify them within their context.
+
+Navigation using command prompt
+----------------------------
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\2.public_class\src>cd ..
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\2.public_class>cd ..
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals>cd 3.identifiers
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\3.identifiers>cd src
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\3.identifiers\src>cd ..
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\3.identifiers>cd ..
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals>cd 2.public_class
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\2.public_class>cd src
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\2.public_class\src>cd ../../3.identifiers/src
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\3.identifiers\src>cd ../.../2.public_class/src
+The system cannot find the path specified.
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\3.identifiers\src>cd ../../2.public_class/src
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\2.public_class\src>cd ../../3.identifiers/src
+
+G:\SomeFolderName\JavaCourseJune\1.LanguageFundamentals\3.identifiers\src>
+_______________________________________________________________
+
+Def: A name Java programming to identify something by using an unique name is called identifier Ex:class name, method name, variable name 
+Rules and possibilities for developing Identifiers
+_____________________________
+1. STANDARD: Follow the camel case while developing class name.Ex: HelloWorld
+     Note: class name is also an identifier.
+2. Identifier name must not start with a digit(number). Ex:1HelloWorld, 123total ==> not possible
+3. Identifier name can have a digit in the middle.Ex: Hello2World ==> possible
+4. Identifier name can have a digit at the last in the identifier name. Ex: HelloWorld3 ==>     possible.
+5. In the identifiers except $ and _ there are no other special characters are allowed. 
+   Ex: *HelloWorld ==> not possible
+        ___Hello___ ==>possible
+        $$Hello$$ ==>possible
+        __Hello$$ ==> possible
+6. Alphabets (a-z & A-Z)
+7. digits (0-9)
+8. keywords cant be used as identifiers.
+9. we can develop the identifier name with any length.But keep it simple and meaningful.
+10. we cant have the space in the middle of the identifier.
+11. we can able to use inbuilt class names and interfaces names as identifiers. even though it is valid to use predefined java class names and interface names as identifiers it is not recommended because it leads to the confusion.  
+12. Java identifiers are case sensitive.
+
+
+Note: its possible to create a java file without any content in that file. Compilation will be success.(developing empty java file is possible), but you dont get the class file.
+
+
+print VS println
+______________________________________________
+1. In case of 'println' cursor will be coming to the "next line". i,e after printing the content of the print statment, because of the 'ln' cursor comes to the next line.
+2. println is method
+   Note: System is class, out is an object, println is a method.
+3. In case of 'print' cursor will not comes to the "next line". i,e after printing the content of the print statment,  because of 'just print and without ln' cursor will be staying in the same location.
+Note: print is also a method
+Note: In General we call print and println statements as 'print statment' but there will a different method for 'next line' and 'without next line'
+Note: 'next line' is also called as 'new line'
+Note: print and println both will be interacting with the "standard output stream"
+       There are maily three streams in Java
+       1. Standard Input Stream
+       2. Standard Output Stream
+       3. Standard Error Stream
+- In Java ';' indicates that end of a statement.
+  Note: if you are not ending a statement with a semicolon then you will be getting CTE.
+         - CTE(Compile Time Error or Compilation Error)
+-Note: console == command prompt == terminal
+
+
+   ***********Literals in Java**********
+___________________________________
+- Literal is a values that can be assigned to a variable.
+- Literals represent fixed values that cannot be changed during the exection of the   program.
+  Java Supports several types of literals
+  1. Integer Literal - A number without any decimal points(number of -ve or +ve)
+  2. Floating Literal - A number which has a decimal point
+  3. Character Literal - A single character within a pair of single quots
+  4. Boolean Literal - true and false
+  5. String Literal - multiple characters within a pair of double quots
+  6. Null Literal - null is also a literal, that can be assigned to a reference variable.
+
+Basic MathOperators
+----------------------
+- we can perform mathematical operations inside the SOP
+
+syntax: operand operator operand 
+Ex:      10       +           10
+          20       -           10
+
+- in case of '/' you will get quotient value
+- in case of '%' you will get remainder
+
+______________________Datatypes and Variables_______________________
+Datatype is nothing but a type of data
+In Java we have 2 types
+1. primitive datatypes
+2. non-primitive datatype
+
+primitive datatypes ==> 8 
+1. byte
+2. short
+3. int
+4. long
+5. float
+6. double
+7. boolean
+8. character
+
+non-primitive datatypes ==> reference type, user type
+
+________variables________
+ - In order to store the varying data we need a variable
+      _________________In case of primitive datatypes_______________
+ SYNTAX: datatype variableName assignmentOperator literal;
+        Ex: int          i                =                   10; 
+        ==> int i = 10;
+
+Note: = is the assignment operator. left side assignment.
+Note: variable is also an identifier
+
+int i; ==> variable declaration
+i = 10; ==> initialization
+System.out.println(i); ==> usage
+
+____JavaConvention____
+class name ==> always starts with a uppercase letter and follows camel case.
+                 Ex: HelloWorld
+variable and method name ==> always starts with a lowercase letter and follows camel case.
+                 Ex: thisIsTheVariableIdentifierExample
+                 Ex: thisIsTheMethodNameExample()
+
+Note: Java compiler ignores the white spaces.
+       we can use the whitespaces for better readiability.
+
+- By default the decimal values are considered as double type.
+- By default in java decimal values are considered as double types only not float type.
+- to supply the decimal values for float datatype just include either 'f' or 'F' after the decimal value. then compiler will be considering that value as float value.
+___________
+int i; ==> declaration
+i = 10;  ==> first time initialization
+System.out.println(i);==> usage
+i = 20; ==> re-initialization
+System.out.println(i); ==>usage
+i = 0; ==> re-initialization
+System.out.println(i); ==>usage
+i = -100; ==> re-initialization
+System.out.println(i); ==>usage
+
+Note: a variable can be re-initialized any no. of times.
+_______________
+
+byte < short < int < long < float < double
+
+byte ==> -128 to 127
+short ==> -32768 to 32767
+int ==> -2147483648 to 2147483647
+long ==> -9223372036854775808 to 9223372036854775807
+float ==> 1.40239846e-45f to 3.40282347e+38f
+double ==> 4.94065645841246544e-324 to 1.79769313486231570e+308
+
+___________________String concatination_________________
+String can be added to anything. Anything can be added to String
+
+
+- In a single line by using ',' as seperator we can declare any no. of varables,   and initialize as well. but that should be of the same type.
+
+Note: c4 = c6 = 'c'; ==> compound assignment
+
+- before the usage of local variables compulsary it should be initialized.
+  - local variables must be initialized before usage.
+
+
+- Concatination is the process of adding anything with the string or adding string   with anything.
+- Concatination referes to the process of combining or joining two or more strings   together to create a single string.
+- we can combine strings with other data types like numbers or variables.
+- In java the most common way to concatenate strings is by using the '+' operator.
+
+Note: by default the whole number is considered as int values only. and we should follow the int range otherwise you will get integer number is too large.
+
+Note: Java is case sensitive. 
+      Ex: variable and VARIABLE or VaRiAbLe ==> all are not same. They are           different.
+
+(result1 == result2 == result3);
+ true == false == false
+ false == false ==> true
+
+
+Note: we can just declare the local variables without initializing it as long as yo       dont use them.
+      if you are trying to use local variables without initializing then you will       get an error.
+Note: local variables are local to that declared methods only, they will not be       visible outside of the declared methods.
+      in otherwords local variables scope is limited to the declared methods only.
+
+
+________________comments-in-java_____________
+- comments are developed for the information puropose about a particular line of   code or code snippet or about the whole document.
+- comments are ignored by the compiler.
+- comments are used for documentation and explanatory purpose. 
+- comments not executed as part of the program's logic and do not affect the   program functionality(execution).
+ 
+There are three of comments in java
+----------------------------------------
+1. single line comment
+   Ex: //This is a single line comment
+
+2. multiline comment(block comment)
+   Ex: /* any no. of lines of code */
+
+3. documentation comment(for generating API documentation kind of things)
+/*
+*some info
+*some info
+*some info
+*some info
+*/
+
+
+___________________________UNARY OPERATORS_______________________
+
+Why do we need unary operators??
+In order to increment or decrement values to the variables we can use unary operators.
+i = 10;
+i += 1;//i = i + 1
+
+Note: 10++ Wrong!! or --10 Wrong!! 
+      Because unary operator can be only applyed to the variables. Not the literals itself.
+
+if you wanted to increment or decrement the value of a variable more than 1 time. then you should use this approach
+
+i = 1;
+i += 19;
+
+instead --> i++; or ++i;
+
+Note: if you wanted to increment or decrement the value of a variable by only one time then you can use unary operators.
+
+1. INCREMENT(++) 
+   1.1 PRE increment (Ex: ++i) 
+   1.2 POST increment (Ex: i++)
+   
+2. DECREMENT(--)
+   2.1 PRE decrement (Ex: --i) 
+   2.2 POST decrement (Ex: i--)
+
+
+- in case post (increment, decrement) - the modified value will be affected from     the next usage not from current usage(immediate usage)
+  i, e wherever the operation is going on there the value remains same, from the     next usage the modified value will be applied.
+
+- in case of pre(increment, decrement) - the modified value will be immedeately
+  applied. 
+  i, e wherever the operation is going on there itself the modified value will be   applied.
+
+If Block
+----------
+1. `if` is a keyword in Java.
+2. `if` is a conditional statement.
+3. The `if` condition argument should always result in a boolean value. Otherwise, you will get a syntax error.
+4. The `if` condition can have a body (opening and closing curly braces).
+5. If the condition evaluates to true, the body will be executed; if the condition evaluates to false, the body will be skipped.
+6. An `if` condition with curly braces can contain any number of valid statements.
+7. The `if` condition should always use parentheses for expressions.
+8. The `if` condition can be written in any method or block.
+9. In the `if` condition, relational operators such as `==`, `&&`, `||`, `&`, `|`, and `!=` are commonly used.
+10. In the `if` condition, initializations can also be performed, but the resulting value must be a boolean.
+11. In the `if` condition, declaring new variables is not possible, but already declared variables can be used.
+12. In the `if` conditional expression, any complex expressions can be written, but the resulting value must be a boolean.
+13. You can change a variable's value by reinitializing it in the `if` block any number of times.
+
+	
+
+
+Single-And and Single-Or
+--------------------------
+1. Single-and (&) and single-or (|) are also called bitwise operators.
+2. In the case of &, even though the first operand returns false, the second operand will also be checked. However, the final result will be false.
+3. In the case of |, even though the first operand returns true, the second operand will also be checked. The final result will be true.
+
+If-Else
+-----------
+1. We can develop the `if` block even without curly braces.  
+2. If there are no curly braces in the `if` block, only the immediate first statement will be part of that `if` block, not any subsequent statements.  
+3. Along with the `if` block, we can also develop an `else` block.  
+4. Normally, the `else` block will also have opening and closing curly braces.  
+5. If we use an `if` block along with an `else` block, and if the condition returns false, control will execute the `else` block.  
+6. If the condition returns true, control will not enter the `else` block.  
+7. We cannot develop an `else` block without an `if` block. If you do, you will get a compile-time error (CTE).  
+8. We should not place any other statements between `if` and `else`; otherwise, you will get a compile-time error (CTE). The `else` block should immediately follow the `if` block.  
+9. We can develop nested `if` blocks at any level.  
+10. If the outermost `if` block returns false, it doesn't matter how many nested levels of `if` blocks you have; control will not enter the body of the outermost `if` block.  
+11. Inside an `if` block, we can write another `if` and `else` block or any number of `if` blocks, and inside the `else` block, we can also write any number of `if` and `else` blocks or just `if` blocks.  
+12. We can write an `else` block without curly braces, but only the immediate first statement will be part of that `else` block, not any subsequent statements.  
+
+
+If, Else-If, and Else
+-----------------------  
+1. Along with the `if` block, we can also develop `else-if` blocks.  
+2. An `else-if` block also has a condition.  
+3. An `else-if` block accepts only boolean values, either true or false.  
+4. For one `if` block, we can develop any number of `else-if` blocks.  
+5. If the initial `if` block returns true, no remaining `else-if` blocks will execute.  
+6. If one of the `else-if` blocks returns true, only that first immediately returned true `else-if` block will execute, and not the remaining `else-if` blocks.
+
+Ternary Operator
+-----------------  
+1. "Ternary" means three.  
+2. The ternary operator has three sections: `condition ? expression1 : expression2`.  
+3. If the condition returns true, `expression1` will execute; if the condition is false, `expression2` will execute.  
+4. We can develop nested ternary operators (a ternary operator inside another ternary operator), meaning we can nest ternary operators inside both `expression1` and `expression2`.  
+5. Using the ternary operator, we can write more concise code (fewer lines of code) and make the program faster.  
+6. The ternary operator is generally faster than `if-else` conditions.  
+
+For Loop
+--------  
+1. The need for a `for` loop is to execute the same set of code a specific number of times (until a condition is satisfied), thereby reducing the number of lines of code. This is the logic behind using a `for` loop.  
+2. `for` is a keyword in Java.  
+3. When writing a `for` loop, you must use parentheses.  
+4. A `for` loop has three sections: the first one is initialization, the second one is the condition, and the third one is increment or decrement.  
+5. The first section, the initialization section, is executed only once during the first iteration, not for each iteration.  
+6. After the first section is executed, the condition is checked. If the condition is true, control will enter the `for` loop body; otherwise, if the condition is false, it will not enter the body of the `for` loop.  
+7. If the condition returns true, control immediately executes the body of the `for` loop.  
+8. Inside the body of the `for` loop, which is enclosed in curly braces, you can include any number of statements.  
+9. After executing the body, the third section (increment or decrement) of the `for` loop will execute. Control then checks the condition again; if the condition is true, control will enter the body again.  
+10. If there are no curly braces in the `for` loop, only the immediate first statement will be part of the `for` loop, not any subsequent statements.  
+11. A `for` loop can be ended with a semicolon (i.e., without a body).  
+12. Variables declared within the `for` loop are specific to that loop and not accessible outside of it.  
+13. Using commas as separators, you can declare and initialize multiple variables in the first section of the `for` loop.  
+14. In the `for` loop condition, you can write complex conditions that return true or false.  
+15. In the third section, you can increment or decrement multiple variables.  
+16. You can include any number of `System.out.println` (SOP) statements in both the initialization and third sections.  
+17. `System.out.println` statements can be placed anywhere in the first and third sections, i.e., before or after initialization and before or after increment.  
+18. If you directly use `false` in the condition, the body of the loop becomes unreachable, leading to a compile-time error (CTE).  
+19. If you directly use `true` in the condition, control will enter an infinite loop.  
+20. If you directly use `true` in the condition and have statements after the `for` loop body, those statements become unreachable, resulting in a compile-time error (CTE).  
+21. if you are using the SOP statements in the for loop then, you must declare the variable outside of the loop not inside.
+22. if you are directly supplying `false` then you would get unreachable statement to the body. because it will never be executed.
+23. if you are supplying `true` directly then the statements after the for loop body becomes unreachable.
+   
+Nested for loop
+------------------
+1. for loop inside another for loop.(outer and inner for loop)
+2. we can able to develop any nested level for loops.
+3. for each iteration of the outer for-loop inner for loop will be executing its all iterations.
+4. for example, we can use outer-for-loop for printing row values, and inner-for-loop we can use for printing column values.
+5. whatever the variables that we are initializing within inner for loop would be visible for only inner-for-loop and not to the outer-for-loop. bcz after the execution of inner loop the variable which got initialized within the inner-for-loop would resetting to its original status. i,e (just declaration)
+6. if you wanted to use that inner-for-loop initialized variable even outside of the inner-loop then, in the beggining itself we need to initiaze.
+7. if you want to keep track of the last value of inner-for-loop also then you should initialize that variable outside of the inner-for-loop.
+
+continue
+----------
+1. continue is a keyword in java.
+2. we can use continue anywhere in the looping context.
+3. in case of continue, it will skip to the next iteration of the current loop without executing the further statements of the loop.
+4. continue cant be kept as a first statement in the current block if there are further statement in the current block.
+5. continue must be kept as a last statement in the current block if there are some statements in the begginning of the current block.
+6. continue is also a statement.
+7. we cant have continue statement in the middle of the statements.
+8. we cant keep more than one continue consecutively. otherwise you would get error. 
+
+
+break
+--------------------------
+1. break is a keyword in java.
+2. break can be also called as a statement.
+3. in case of break, the control will come out of the loop immediately without skipping to the next iteration.
+4. break terminates the entire loop itself.
+5. by default break will be terminating the containing loop.
+6. break must be kept as a last statement in the current block.(not as first and not in the middle), break cant be in the middle of the statements.
+7. in one block you cant keep more than one `break` consecutively or alternatively also.
+8. `break` can be used only within the contexts of any loop and switch condition and not anywhere outside.
+
+labeling of loops
+------------------
+1. on top of any loop we can give a label(name to that specific loop)
+   syntax: valid_identifier_name:
+2. label name should be a valid identifier.
+
+Enhaced for loop or for-each loop
+------------------------------------
+1. Enhaced for loop is the improved version of the traditional for loop.
+2. Enhaced for loop has only 2 sections.
+   1. declaration 
+   2. reference 
+3. In between declaration and reference section we have (:) as a seperator.
+4. by default for-each iteration would be starting from the first element, and iterator goes on until the last element in the array.
+5. enhanced for loop or for-each loop introduced in Java 1.5
+6. we can send any type of elements to the for-each loop variable.
+7. in case of for-each loop, you must declare the variable within the for loop itself. not before like in traditional for loop otherwise you would get bad initializer for for-loop error.
+
+
+while loop
+-------------
+1. `while` is a keyword in java.
+2. while loop has only one section(checking the condition)
+3. As long the condition is true while loop body would be executing, once the condition returns false control will come out of the while loop.
+4. we should not generally try to re-initialize a varialbe in the while condition. otherwise there might be a chance of getting into infinite loop.
+5. In the while loop its always recommended to keep the increment/decrement before the `continue` statement.
+6. we can develop nested while loop.
+
+do-while
+---------
+1. In case traditional while loop first it is going to check the condition then only it will execute the body. but in case of do-while loop first body will execute then only at last it will check the condition. 
+2. In case of do-while loop one iteration is guaranteed, even though the condition fails. that is the speaciality of do-while loop.
+
+
+Methods
+-----------
+1. We can use methods for execting same set of code multiple times.
+2. By using we can seperate the functionalities.
+3. By default JVM will be invoking the main method, in other word JVM will be looking for [public static void main(String[] args)] this method only.
+4. methods will be having { and } curly braces.
+5. A method can have any no. of statements inside it. and any valid statements.
+6. unless untill a method is called it wont be executed.
+7. we can shuffle the access specifier `public` with `static` modifier and vice versa.
+8. JVM will be looking for only public static void main(String[] args) and if you are not having public then definately you will get error at the run time.
+9. using var-arg also we can able to send the argument value to the main method static public void main(String... args), since the var-arg is also a type of array.
+10. main method argument reference name can be anything
+    Ex: static public void main(String[] any)
+11. we can use different type of declaring array reference variable in the main method argument. 
+Ex1: static public void main(String any[])
+Ex2: static public void main(String []any)
+12. invalid way of declaring the array reference
+Ex: static public void main([]String any)
+13. static public void main1(String[] any) for this you will get the error at time of running since the JVM will be looking for only `main` method not any other like `main1`
+14.There are two types of methods
+   1. Inbuilt Methods(ex: print, println, main)
+   2. User-defined Methods (ex: test1, abc, xyz)
+15. Apart from the default `main` method if we are developing any other methods it will come under user-defined methods.
+16. In one class we can develop any no. of methods but by default JVM will calling only the main method.
+17. main method is the starting point of a program.
+18. we can call a method by using its name and by supplying required arguments.
+19. a method without any argument is called `no argument method`.
+20. methods are stored inside stack memory. and will be following the stack operation that is, FILO or LIFO
+21. we can call the same method any no. of times and this is how we achieve code reusability.
+22. return is also a keyword. we can make use of the return inside a method or inside a block.
+23. for a method with `void` as a return type the return statement is optional, we can keep it or leave it.
+24. after the execution of the return statement the control has to return to its caller.
+25. within the if block we can use the return statement.
+26. in the else block also we can use the return statement.
+27. for the main method also we can keep the return statement as optional.
+28. for the void return type you must not supply a value with the return statement.
+29. return must be the last statement in the current block or a method.
+30. if a method is having return type anything other than void then compulary you have to supply that values using return statement.
+31. inside the SOP also we can make a call to the method.
+    two things will happen
+    1. calling that method
+    2. printing the return value also.
+32. BODMAS rule is applied in the expressions.
+33. we cant call a method inside the SOP which is having the return type as void. otherwise you will get error " 'void' type not allowed here"
+34. we must supply the appropriate argument value while calling the method.
+35. method can accept any type of arguments(primitve or referece) and any no. of arguments by using ',' as a seperator. 
+36. we can make use of the argument values that we supply.
+
+static keyword
+-----------------
+1. static is a keyword or reserved word.
+2. we can declare a variable with static keyword.
+3. static means something that doesnt change very often.
+4. static members are also called as class members.
+
+	how static members are processed?
+	---------------------------------
+	1. All the static members gets loaded whenever the class is loading to the memory.
+	2. In case of static variables they are going to be loaded with their default values Ex: int ==> 0, float, double ==> 0.0, boolean ==> false, String ==> null etc... 
+	3. After all the static members gets loaded to the memory, the next step is that all the static members gets initialized and executed from top to bottom only once.
+	4. All the static members gets loaded, initialized and executed from top to bottom only once for one execution when the class is loading to the memory.
+	5. After all the static members gets loaded, initialized and executed from top to bottom control comes to the main method. starts execution from the main method.
+
+Interview Question ==> Is there any possibility of executing something before the execution of main method??
+Ans: Yes. All the static members gets loaded, initialized and executed before the execution of main method.
+
+- we cant able to declare or initialize more than 1 variable with the same name, even though the datatype is different in the class context.
+-we cant able to declare or initialize more than 1 variable with the same name, even though the datatype is different in the local context.
+
+- static block is also a static member or class member.
+- static block is also knows as SIB(Static Initialization/Initializer Block)
+- In a class we can develop any no. of static blocks.
+- static blocks can have any no. of valid statements.
+- static block doesnt have a return type or return statement.
+- static block is not a regular method but for the compiler static block is special type of method.
+- all the static blocks will be executing from top top bottom only once when the class is loading for the first time before the execution of the main method.
+- for one execution a class will be loaded only one time, not multiple times.
+- usage before declation is not possible you will get(IFR Illegal Forward Reference Error)
+- initialization of a static variable before its declaration is possible.
+- we can call the main method exlicitely in two ways
+  1. main(null)
+  2. main(args) - calling the other class main main method by supplying the reference of the current class main method.
+
+- straight forward way is using main(null)
+
+non-static
+--------------
+1. if we create a variable inside the class without a static keyword then, it becomes non-static variable.
+2. we cant refere the non-static variable inside the static context without a reference variable.
+3. we get the reference variable while creating the Object.
+4. An object is a real world entity(Dog, Car, Bike, Chair). 
+5. Objects will be having properties and behaviours
+   properties - breed, name, color, gender, age, weight
+   behaviours - bark, bite, chase a cat
+6. Objects are created in the Heap memory.
+7. we can create n number of object for a class.
+8. syntax:  className referenceName = new ConstructorCalling 
+          Ex: A a1 = new A();
+9. `new` is operator and also a keyword
+10. within the static method, block we cant refere to non-static variable or method.
+11. we can create the objects literally anywhere inside a class.
+12. whenever we are creating the object, all the non-static members of that class will be loding to the memory.
+13. if you see anywhere the new then it means that object creation is happening.
+14. at any point of time one reference can be pointed to only one object.
+15. we can create an object inside the static method, block.
+16. each time when you create the object, different copy of the same non-static member will be loaded to the memory.
+17. property = variables(non-static, static)
+    behaviour = methods(non-static, static)
+18. One object can be pointed by any number of references, changes to one reference affecting all the references which are pointing to the same object. by using any reference you can make the modification.
+19. Method return type can be a class type, if so, then compulsory we must return that class reference while returning the value.
+20. while returning a value in a method we can create the object and return.
+21. if the return type is class type then, it can accept a reference of that class type or it can accept the object of that class type itself.
+
+
+constructors
+--------------
+1. Constructors are used to initialize the objects.
+2. Constructors are not a usual methods. they dont have the return type.
+3. Constructors name must be same as class name(case sensitive).
+4. In each and every class there will be a default constructor, which is a no-arg constructor. that no-arg constructor will be kept by the compiler at the time of compilation.
+5. In the default constructor there will no printable statemenets. thats why we do not get the output from that constructor.
+6. At the time of creating the objects, constructors will be exected accordigly.
+7. we can call a constructor any no. of times.
+8. constructors belongs to non-static context.
+9. non-static members can be directly accessed in the constructor body without the need of a reference variable.
+10. If the user only keeps the custom constructors then we should call only those  constructors according to the argument. (not the default constructor) default constructor only applicable whenever there are no exlicit constructors are exist in the class.
+11.this is a keyword.
+12. We can use `this` calling statement within the constructor body, as a first statement.
+13. `this` calling statement within any of the constructor(no-arg, arg)
+14. `this` calling statement will be always calling the current class constructor, before the execution of the constructor which contains the this calling statement.
+15. `this` calling statement must be a first statement in the constructor body.
+16. we can able to call a method by its name directly but not the constructor by its name. constructor can be only invoked while creating the object, by using `this` calling statement, or using `super` calling statment normally. NOT BY THE NAME OF THE CONSTRUCTOR.
+17. In the body of the constructor, anywhere we can create the object.
+18. recursive invocation cant be possible for the constructors.
+19. A constructor cant call itself.
+20. before the constructor execution static blocks will be executed.
+21. In the static block also we can create the objects.
+
+IIB(Instance Intizer Block or Instace Intialization Block)
+----------------------------------------------------------
+1. A simple opening and closing curly brace within the context of a class(that must be the direct child of the class, not inside any other methods or blocks), that is the IIB Block.
+2. We can develop any no. of the IIB blocks.
+3. IIB is part of the non-static 
+4. Whenever we are creating the object before the execution of the constructor body, IIB blocks will be executed from top to bottom only once for one object creation.
+5.if there is a common implementation for all the objects then we can keep it in the IIB
+6. even if we do not have any constructors in the class explicitely, from the default constructor there will a call to the IIB blocks.
+7. if there is a IIB and also `this` then first this calling statement will execute then it will execute the IIB before the execution of the target constructor.
+
+
+command-line arguments
+----------------------
+1. we can pass the arguments to the program at the time of running using command-line arguments.
+2. we can pass the arguments to the main method while we are about to run a program.
+3. we can pass any no. of arguments, and any type of arguments. Those arguments can be used in the program for computing purpose. 
+4. its one of the way of supplying inputs to a program.
+5. The default main method will be always accepting (String[]) as the argument.
+6. Whatever the arguments that we are going to send will be converted to the string and those will be added in the form of a String array object.
+7. if in case we dont supply any arguments at the time of running a class, then the JVM is going to create an empty String[] Object and send it as an argument to the main method.
+8. we send command line argument using space as a seperator, means one space between each argument. we can use any no. of spaces between arguments but minimum is one space.
+9. the lenght of the String[] array object will be the  no. of arguments that we are supplying at the time of running a class.
+
+
+______________________________________________________________________________
+
+Scanner class
+-------------
+
+1. We can use Scanner class Object to get the input from the user
+2. Using Scanner class Object is the conventional way of the getting inputs from the user.
+3. Scanner is an Inbuilt class.
+4. Scanner is available in the java.util package, hence compulsory we must import the Scanner class before we use it in our program.
+5. If any class is available in the java.lang package it can used directly without importing. Ex: System, String etc...
+6. In each and every java file all the inbuilt classes which are available in the java.lang package are available to that specific java file. we dont have to import them explicitely.
+7. If any inbuilt class, interface are available out of the java.lang package compulsory we must import them before using them in our java files.
+
+8. Streams 
+  1. input stream
+  2. output stream
+  3. error stream
+
+9. 'Token' is a compiler term. Ex: a (complete token), abc (complete token), %(complete token), xyz hello (two different tokens)
+10. There is a method called next() is the Scanner class, which reads the complete token entered by the user in the form of String. and it returns the red value in the form of String Object. 
+10. If our requirement is to read the entire line(including spaces also) then we have use nextLine() method.
+11. nextLine() method aslo reads the input as String only.
+12. nextLine() method returns red value in the form of String object.
+13. If you specifically wants to read the input in the form Integer then you should use nexInt() method. nextInt() methods returns the value in the form of primitive int.
+14. if you are using next() or nextLine() method then compulsory you have to assign the returned value to the String reference itself and not for any other datatype varialbes.
+15. if you supply int value while using nextDouble() method then int will be automatically upcasted to double. Ex. 10 becomes 10.0 
+16. nextBoolean() method reads the next complete token in the form of a boolean value.
+17. nextBoolean() is going to return primitive boolean value.
+18. if you try to enter anything other than true or false values then you would get TypeMismatchException at the run-time.
+19. while supplying the value for the nextFloat() method we must not give the F or f at the end of the decimal value, otherwise you would get InputMismatchException at the run-time.
+20. close() method is available in the Scanner class, once we complete using the scanner class object we should close the input stream resource, that is possible through close() method. otherwise in some database applications you will encounter some issue if you dont close the opened resource.(ex: after we use the water tap we must close it in-order to avoid the wastage)
+21. if you use Scanner class resource after the close method you would get IllegalStateException since already  Scanner resource has been closed and we could not able to use it furthermore.
+22. closing the resource using close() method is cruicial in case of database applications.
+23. after the execution of the nextInt() method cursor stays in the same line.
+    once we hit the 'Enter key' that Enter key character will be completely cosumed by the nextLine() method immediately.
+24. Solution to this problem is, we should include another nextLine() to consume all the blank spaces which after the previous input value, this technic will make way to get the next Line of input from another nextLine method without skipping it.
+
+Objects Count
+-------------
+1. All the static members of a class are part of each and every objects of that particular class.
+2. All those static members can be accessed by the Object reference of that class.
+3. same copy of static members will be available for all the objects of that class.
+   but in case of non-static member for each object a seperate copy of non-static member will be loaded each time with the default value, unlike static which the same copy for all the objects changes would be happening for the same copy(only one copy) of the static member.
+4. each and every static member of a class is part each and every object of that class.
+
+Inheritance In Java
+-------------------
+Definition:  Inheritance is process aquiring the properties(variables) and behavours(methods) of another class(super class, parent class, base class).
+
+Advantage: Code Reusability
+
+We can acheive Inheritance with respect to classes using `extends` keyword.
+
+Types of Inheritance
+---------------------
+1. Single Inheritance(One class is extending another class)
+2. Multi-Level Inheritance(one class extends another class that another class will be extended some another class, keep on...)
+3. Hierarchical Inheritance(Two class can extend one class)
+4. Hybrid Inheritance[Dimond Problem](one class extending two classes)but its not possible with respect to classes
+5. Multiple Inheritance(one class extending two classes)
+
+
+Multiple Inheritance not allowed in java with respect to classes.Since it will raise the ambiguity.
+
+1. In each and every constructor body as a first statement compiler will be keeping `super();` even though we do not keep that statement explicitely.
+2. if you are keeping `super();` explicitely then compiler would not keep that statement.
+2. `super();` will calling the super class no-arg constructor.
+3. If a class is not extending any other class, then it is implicitely extending Object class.
+4. Object class is the super-most class available in the entire java itself.
+5. each and every class either directly or indirectly extends Object class.
+6. In the Object class there is a no-arg constructor which not having any statements inside it.
+7. Object class is available in the java.lang package. thats why we dont have to import it explicitly.
+8. Either you mention or not each and every class extends Object class whether directly or indirectly.
+
+Constructor Chaining
+--------------------
+one constructor is invoking another constructor either super class constructor on the current class constructor and this process can be carried in the manner chaining events, since we can refere this process as Constructor Chaining.
+
+this() calling statement
+--------------------------
+1. `this()` is a calling statement
+2. this - is a keyword in java
+3. `this()` calling statement can have(take) any no. of arguments(including no-arg) 4. as well.
+5. `this()` calling statement can be used within a method and within a constructor also.
+6. if we are using `this()` calling statement within the constructor we must use it as first statement in the constructor body.
+7. if we are using `this()` calling statement as a first statement in the constructor body then, compiler will not keep `super()` calling statement.
+8. `this()` calling statement will be always calling the current class constructor itself accoring the arguments that we are passing to the `this()` calling statement.
+
+Note: if you are not creating an object in the sub-class then it will not invoke the default constructor which is added by the compiler implicitely, but definately the default constructor will be considered for the compilation. and if there is no-arg constructor available in the super-class which is invoked by the sub-class default constructor then definately we get CE.
+
+Note: main method is not going to be inherited to the sub-class event though we are using the extends keyword. other static method would be inherited as usual.
+
+Has-a relationship
+-------------------
+1. Has a relationship is different than inheritace.
+2. In case of Has-a relationship we dont use extends but instead we use the reference of another class.(that reference can be non-static)
+3.this() calling statement is different than just `this` keyword.
+4. just `this` it will always pointing to the current object.	
+5. when we are creating the objects the references would be loding with the default value `null`.	
+
+packages and access levels
+-------------------------
+1. folders are also called as packages, directories in the programming terms.
+2. while we are working with command prompt under the scr folder we can have any no. of packages and sub packages.
+3. we need this package structure in the project development to seperate files of different categories across the packages, and we should be able to use those files as per the requirement of the main class or concerned classes within project. 
+4. creating packages and sub-package is very easy task in the IDE(Eclipse, IntelliJ)
+5. package is a keyword.
+6. `.` represents a current directory or current package.
+7. generally you should start to mention the package names starting from the src folder(source folder) 
+8. to compile in the package context command for compile right from the scr folder -----> javac -d ../classes com/rst/C.java
+for running ---------->java -cp ../classes com.rst.C or java -cp ../classes com/rst/C
+9. because of the package declation whatever the structure is in the src folder the structure will be created in the classes folder as well.
+10. access specifiers are also called as access modifiers.
+11. in java there are 4 access specifiers are there(private, protected, default, public)
+12. private is most narrower(access is very much restricted)
+13. public is the most wider(access is very much available)
+14. default access specifier is also calles as(frendly and package level)
+15. the scope of private member is limited to that class itself(or a class itself) not outside.
+16. private access specifier can be given to any class variables(static or non-static) or class methods(static or non-static).
+17. access specifiers are not applicable to the local variables(if you try to give that definately you get error)
+18. private members are not inheriting to the sub-class
+19. if you are declaring any access specifiers then by default compiler will considering that member as with the default access specifier.
+20. default member can be used even out-side of the class as well within the same package.
+21. default members are inheriting to the sub-class
+23. constructors can have access specifiers.
+24. default members can accesses anywhere within the package.
+    within-class(same class)
+    different-class(same package non-subclass, same package sub-class)
+25. default members are inheriting to the sub-class.
+26. first package statement then only import statement.  
+27. import is a keyword
+28. it is suggested to import the members which is required for that file instead of importing all the members from a package using `.*`(it will reduce unncessary load)
+29. The main usage of access specifiers is to control the un-necessary access of the members within the projects.
+30. protected is an access specifier.
+31. protected can be accessed outside the package immediate sub-class only.
+
+Encapsulation
+-------------
+Binding of Data and Code together as a single unit(within a class).
+Data ==> variables
+Code ==> methods
+Its a kind of isolation.
+We achieve security in case of encapsulation. by making variables as private so that they could not be accessed outside of the class. 
+If any class wants to access those private members then we will give the access indirectly through getter and setter methods(which are available in the same class which contains private members).
+getters and setters methods should public 
+
+
+Type-Casting(type-convertion)
+-------------
+Definition: converting from one data-type to another datatype is called type-casting.
+
+There are two types of type-conversions in Java
+
+1. primitive type-casting
+2. non-primitive type-casting(reference casting)
+
+The datatype that can be used in the primitive type-casting are
+---------------------------------------------------------------
+1. byte
+2. short
+3. int
+4. long
+5. float
+6. double
+7. char
+___________________>upcasting(automatic)
+byte < short < int < long < float < double 
+downcasting(explicite)<___________________
+
+Note: we cant use boolean type for type casting.
+
+
+- Converting from smaller range to the bigger range is handled by the compiler itself.(auto-upcasting)(implicite casting)
+
+- upcasting explicitely is optional. compiler only takes care
+- downcasting explicitely is mandatory. since compiler will not take a chance.
+
+Note: When there is no data-loss in those cases compiler only converts the value from a smaller-range to the bigger-range. i,e auto-upcasting or implicite casting.
+
+Note: There is no need of Explicite up-casting(compiler only takes care)
+      Explicite upcasting is optional.
+
+- We can do Explicite downcasting after knowing that we may lose the data.
+- We can convert any no. of times to any type.
+
+- int to char is possible(explicite casting is required), it is going to fetch the character equivelent of that int value.
+
+- char to int is possible(no need of explicite casting).
+
+Note: Reference can hold `null` value.
+
+- The default value for a reference which in the context of a class is `null`
+
+- for the super class reference you can supply sub-class object(compiler only does auto upcating from sub-type to super-type)
+
+- super class reference can point to sub-class object.
+
+- sub class reference cant hold super class object.(it comes under down-casting)
+
+- by using `instanceof` operator we can avoid ClassCastException. we are going to take suggestion from the instanceof operator before we perform downcasting.
+
+
+/*
+Problem statement: 
+
+Given an integer, n, perform the following conditional actions:
+
+If n is odd, print Weird
+If n is even and in the inclusive range of 2 to 5, print Not Weird
+If n is even and in the inclusive range of 6 to 20, print Weird
+If n is even and greater than 20, print Not Weird
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Access Modifiers or Access Specifiers
+--------------------------------------
+In Java we have four access specifiers
+1. private -> narrower
+2. default(package, friendly)
+3. protected
+4. public -> wider
+
+1. private
+------------
+- In Java, the 'private' keyword is an access modifier used to restrict the visibility(scope) of a class, method(member functions), field(data members, variables)
+- private members scope(visibility) is limited to only that class.Not outside.
+- If you are trying to access it outside you will get a CTE.
+- constructors(arg, no arg) can also be declared with access modifiers.
+- if we declare a constructor as private then, we cant able to call that constructor   from outside of the declared class.
+- if you are calling the private constructor within the declared class itself then,     its syntactically proper.
+- constructors are not be inherited to the subclasses but they are involving in the     inheritance process.
+  class Q
+  {
+    private Q()
+    {	
+         System.out.println("Q()");
+    }
+  }
+ class R extends Q
+ {
+ }
+
+-  for the above program we will be getting error, bcz
+   In each and every class there will be a default constructor in the R class also      that default constructor first statement( super() ) is calling super class no arg      constructor and which is private, so that is why the CTE.
+- if you are not providing any access specifier for a constructor then it is with the    default access specifier.
+
+- in case of SIB(static initialization block), and in case of IIB(instance   initialization block) we cant declared them with any access specifier.
+  if you do you will get error.
+
+- if we have two java files with the different classes, and they are in the same   folder, assume you are tyring to access one java file class within the other java   file, compiler can able to easily identify that java file and compile that java file   as well.
+  Note: - only if the class is declared with default or public.
+         - if you are trying to access the members of that class, those members
+           must be default, or public but not private!
+
+       the only scope of default members
+---------------------------------------------
+DEFAULT - within the class, within same package sub-class,
+              within the same package non-sub class,
+              within the indirect sub-classes of the same package.
+    ********Anywhere in the same package is possible********
+
+- in software rst represents reStructuredText
+- default members doesnt inherits to the different package sub-class.
+
+- if you are using package statement and import statment then,
+  first you must keep package declaration then only import declaration
+- while importing a package if you metion '.*' that indicates that you are importing all the files   from that particular package. Ex: import SomeName.*;
+- but if you wanted to import only a particular class you can use the syntax import   packageName.ClassName; Ex: import SomeName.N; ** This type of import is recommended bcz instead   importing all the files that will be the unneccessory load. **
+- once you import a package in the file, that package or package members are availble to the entire   java file itself(where import statment is declared).
+
+Scenario :: if you are importing a particular class from a package then that class only will              be    considered for that entire java file instead of already available class in the same                    package.
+            if you are not using import statement then only it will be considering the current package             class with the same name while you are refering. 
+
+- For the local variable access specifiers are NOT APPLIACABLE.
+  only for static or non-static variables
+
+
+- protected members can be accesses outside of the package inside the subclass but
+  -Whichever the class is Inheriting (the subclass) in another package, by using that class     object reference only you can access the protected member.
+ -you cant access protected member by using the super class(from the other-package which   we have mentioned for the extending) object reference.
+Ex: package rst;
+class G extends SomeName.A
+
+Note: By using G class object reference you can access the protected member but not by        using the A class object reference.
+- protected members can be inherited to the indirect subclasses in another package, but   the ground rule is that you must create an object to that indirect subclass only, by using   the reference of that indirect subclass object only you can access the protected member.
+
+                   Summary
+-----------------------------
+1.  public ==> The public access specifier allows unrestricted access to the class, method,                   variable, or constructor from any other class or package.
+2. private ==> The private access specifier restricts access to only within the same class.it                  prevents other classes from accessing private members.
+3. protected ==> The protected access specifier allows access to the members within the                     same package and only subclass of outside the other package.
+4. Default ==> if no access specifier is specified, it is considered as the default access                  specifier. it allows access to members wihin the same package but not from                  outside the package.(WITHIN PACKAGE LEVEL ONLY)
+
+Important Points
+-----------------
+1. Default access specifier is also called as (PACKAGE-PRIVATE)
+2. Access specifiers can be applied to Interfaces as well
+3. Access specifiers are part of java's encapsulation mechanism, which helps in achieving    data hiding and abstraction.
+4. public members are accessible from anywhere, both within and outside the class or     package.
+5. Access specifiers are not applicable to local variables (methods or blocks)
+6. Access specifiers are not applicable to method or constructor parameters(arguments)          variables.
+7. Access specifiers play a role in defining the visibility of members during inheritance,    composition, and polymorphism.
+8. It is good practice to use the most restrictive access specifier that fulfills the    requirements. This helps to control access.
+9. Access specifiers can be combined with non-access modifers such as static, final,    abstract, synchronized, etc. These modifiers further define the behavior and     characterristics of the members.
+
+
+
+Abstraction
+_______
+
+- Abstraction referes to the process of (mechanism) "HIDING THE        IMPLEMENTATION DETAILS  AND JUST SHOWING THE FUNCTIONALITY"
+- Showing only essential things to user and hiding the internal details.
+
+
+1. We can make class as abstract.
+2. Abstract class can become a member of the java file. 
+3. For abstract class also compiler will be generating a '.class' file.
+4. By making class abstract we can achieve 0-100% of abstractness.
+5. We are achieving data hiding through abstraction.
+6. Abstract class can have abstract methods as well as non-abstract methods.
+7.if the method is having a body thats called implemented, defined, concrete method.(it should be having { } )
+8. If the method is not having a body then thats called non-implemented or abstract method.
+9. If you have at least one abstract method inside a class then class MUST be declared as abstract.
+10. But.. An abstract classs can have both abstract methods as well as non-abstract methods.
+11. Abstract class is not 100% abstract since in the abstract class we can have both abstract method and non-abstract methods.
+12. Encapsulation VS Abstraction
+     1. In case of encapsulation we are making data members as private, so      that no-other classes can get a direct access to those members.
+we have a control over the data, we can make it read-only, write-only, or both. We acheiving data hiding(from other classes) also. 
+    2. In case of abstraction we are making member functions(methods) as abstract. We are just hiding the implementation(internal details) of that method(which is unncessarry in that class). We are acheving data hiding here as well(but which is unncecessary for that class only), but ofcourse we are implementing that method in an another class which is definately neccessary for that class.
+13.By using abstraction we can achieve better code readability as well as reducing complexeties(unnecessary code, which is an advantage).
+14.abstract methods must not have a body(implemention, definition, or {})
+15. Abstract class cant be instatiated(we cant create an object to the abstract class).
+
+Note: Multiple Inheritace is not possible in case of classes in java(one class cant be able extends more than one class at a time)
+
+Note: Abstract class can contain constructors. because abstract class allows defined methods and non-defined methods
+
+Important :: Avoid keeping a class as abstract if there are no abstract methods are                present on that class otherwise that class cant be instantiated(cant able to                   create the object)
+
+**Interface**
+____________________
+- We can achieve 100% abstraction if we want in case of Interfaces.
+- Interface also considered as class internally, but having different functionality than normal class.
+- Interface can become a member of the Java file.
+- Compiler will be generating .class file for the interface as well.
+- Interface provides a way to achieve abstraction and as well as multiple inheritance which    is not possible by normal class.
+- Interface is by default abstract, So abstract keyword is optional.
+- By default interface variables are PUBLIC STATIC FINAL, if you are not giving all these   modifiers compiler only will be adding this modifiers.
+- Methods are by default PUBLIC, ABSTRACT
+- In java JDK8 normal methods compulsary abstract
+  Note: with return type and just method name that method name must be abstract.
+- Interface will not be allowing normal defined methods.
+- Constructors are not allowed in interfaces. bcz contructors are defined.
+- Inside the interface SIB and IIB blocks are not allowed, bcz they are defined.
+- Interfaces cant be instatiated(cant create an object to interface)
+- For Interface we can just create a reference variable
+- reference variables can hold 'null' value. 
+- while implementing the interface methods in the class you must follow the arguments.
+- while implementing the interface methods in the class you must follow the return type as    well.
+- in java if any variable is `public, static, and final` its the perfect constant. we should write the variable name in upper-case. that is the standard way of representing the perfect constant.
+- generally interface will not allow implemented normal methods.
+- `implements`is a keyword in java.
+- interface to class is `implements`
+- interface is giving a contract, that if any class implements the interface it must implement the methods of the interface.
+- Interface variables will not be having default value. Since we cant create any object to the interface there wont be any default value, you must provide the value while declaring itself.
+- We can achieve multiple inheritance in java using interfaces, one class can able to implement more than one interface at time by using `,` as a seperator.
+- we can achieve multiple inheritance by implementing more than one interface.
+- in java JDK 1.8 they have re-engineerired the interface to have any no. of static methods and default methods which is implemented.
+- Reason: To avoid interface to completely depend upon the implenting classes. and interface can have its own implemented methods without the dependency of the implentation classes.
+
+
+Final Keyword Usage
+-------------------
+1. local variables cant have an access specifier. access specifiers will not be applicable to local variables.
+2. `final` is a keyword in java. 
+3. we can declare local variable as final.
+4. if any variable is declared as final. The value for that variable will be fixed it cant be changed further. if you try to change you will get error(cannot assign a value to final variable).
+5. local variables will not get a default value.
+6. for the final variables only first time initialization is possible.
+   i,e re-initialization is not possible for a final variable.
+7. In case of local final variables declartion can be in one line and intialization can be in another line.
+8. if you try to increment/decrement value to a final varialbe, you would get error.
+9. reference variables can also be declared as final.
+10. any type of(data type) variable can be declared with final.
+11. even if you are trying to re-intialize with the same value its not possible.
+12. global variables can be declared as final*.
+13. global final variable with final will not be having a default value.
+14. final global varialbe must be initialized either in the constructor or in the IIB otherwise you would error. i,e before object creation if finalized the final global varialbe must get a value either in constructor or in iib
+15. local variables cant be declared with `static` modifier.
+16. can we use `static` and `final` together?? Yes, Possible.(shuffling also possible)
+17. for the final variables there wont be any default values(static or non-static)
+18. default values will be not available for the global final variables.
+19. It doesnt matter its either class or interface if the global varialbe is final there wont be a default value for that variable. 
+20. it doesnt matter if it is final or normal global static variable if you are trying to use before its declaration definately you would get error.
+Ex:
+static
+{
+    System.out.println(i);
+}
+static final int i = 10; 
+21. if any global variable is declared with public, static and final its a perfect constant and as a standard it should be written in the upper case(all characters).
+22. If any method is final it cant be overrided. i,e final methods cant be overrided.
+23. can we use abstract and final together?? No. 
+    abstract we suppose override in the sub-class
+    final we cant override 
+    so, there is a contradiction or ambiguity.
+    not possible for method also and class also.
+Note: illegal combination of modifiers: abstract and final
+24. we can declare a class as final, if a class is declared as final we cant extend it further.
+25. outer-class cant be declared as private.
+26. outer-class can be declared as final.
+27. outer-class cant be declared as protected also.
+28. the only access specifiers allowed for the outer-class is public and default.
+29. outer-class cant be declared as static.(CTE: modifier static not allowed here)
+
+relational keywords
+-------------------
+class TO class ==> extends
+class TO interface ==> implements
+interface TO class ==> extends
+interface TO interface ==> extends
+
+- One class can able to implement multiple interfaces at a time.
+- We are achieving multiple inheritance by using interfaces.(by implementing   multiple interfaces at a time)
+- One class extend another class as well as can implement any no. of interfaces at   a time.
+- if you want to use extend and as well implements then FIRST GO FOR EXTENDS THEN   IMPLEMENTS
+
+- Interface to interface extends
+- one interface can extends any no. of interfaces by comma as seperator
+- from java8 we can have any no. of static and default methods which are   implemented(having a body, concrete methods). that is the feature of java8 with   respect to interface.
+- The valid access modifiers for interfaces are 'public' and default access(no   explicit access modifier). when no access modifier is specified, it is considered   the default access, which allows access to the interface within the same package.
+- interface methods cannot be declared with the 'protected' or 'private' access   modifiers. the access modifiers avialble for interface methods are 'public' and     the default access(no explicit access specifiers)
+- An interface in java is a contract that defines a set of methods that       implementing classes must provide. by default, all methods declared within an   interface are implicitly public. this means that methods are accessible to all    classes and interfaces, regardless of their package.
+- by default for interface and class the scope will be limited to that package   only.if you want to access interface and class across the packages you must   declare it as public.
+- The members of interface are by default public.
+- the members of a class by default package scope only.
+- we are using static and default method inside the interface to improve the   functionality and flexibility of the interface. 
+- The inclusion of static methods in interfaces allows the definition of utility   methods that are related to the interface but do not depend on any specific   implementation. these methods can be called directly on the interface itself,   without the need for an instance of a class implementing the interface. this is     useful for providing common functionality that can be shared by multiple       implementing classes.
+------
+- One of the main reasons for introducing default methods in java interfaces was to   ensure backward compatibility when new methods are added to existing interfaces.   in prior versions of java, if a new method was added to an interface, all classes   implementing that interface would break unless they were updated to implement the   new method. this limitation caused issues when working with libraris or APIs that   needed to evolve without breaking existing code.
+
+- By introducing default methods, existing classes implementing the interface dont   have to modify their code. they automatically inherit the default implementation   of the new method. this allows interface to evolve over time by adding new   methods while preserving compatibility with existing implementations.
+
+
+-----
+
+- The 'abstract' keyword is used to indicate that a class or method is incomplete   and must be implemented by a subclass.abstract methods dont have a body and their   implementation is deferred to the subclass.
+
+- On the other hand, the 'static' keyword is used to define class-level methods or   variables that can be accessed without creating an instance of the class. static   methods belong to the class itself and are not associated with any specific   instance.
+
+- when combining 'static' and 'abstract' there is a conflict in terms of   implementation, 'abstract' methods require the subclass to provide an   implementation, while 'static' methods are associated with the class itself and   do not have an inheritance relationship with subclasses.
+  **Therfore abstract and static are illegal combinations**
+
+___________________________________________________________________________________
+
+
+-------------------------POLYMORPHISM------------------------------------
+POLYMORPHISM(derived from the greek word)
+POLY - MANY
+MORPHISM - FORMS or SHAPE
+
+1. Polymorphism is also one of the 4 basic pillars of Object oriented Programming   language.
+2. Polymorphism refers to the ability of something to represented in different forms or states.
+
+Ex: Travel from Bengaluru to Mumbai
+    - Airplane
+    - Train
+    - Car
+
+- In Java we can achieve polymorphism in two ways
+  1. Compile time polymorphism (method overloading)
+  2. Run time polymorphism (method overriding)
+ 
+3. Achieving the same thing in different ways.
+
+- An object can take on different forms or exhibit different behaviours depending   on the context in which it is used.
+- Polymorphism allows for code reusability, flexibility, and extensibility.
+- Polymorphism in java is typically achieved through two mechanisms
+  1. Method overloading
+  2. Method overriding 
+- Polymorphism is like having a single name but multiple forms. imagin you have   pet, and it can be a dog, a cat, or even a bird. you give your pet a name, lets   say "buddy" now, no matter what type of pet buddy is, you can stil call it by the   name "buddy".
+- imagin that you want to travel to Hyderabad, we can go through BUS, TRAIN, PLAN
+- Ex: you may have different classes like Dog, Cat, Bird that all inherit from a   common class called 'Pet'. Each of these classes can have their own unique    methods  or behviours, but when you refer to them using the common "Pet" class,   you can  access their shared behaviours.
+
+________MethodOverloading______________
+Rules to be followed
+------------------
+1. Methods name must be same.
+2. Arguments must be different.
+3. Method overloading is an example of compile time polymorphism.
+4. Return type can be same or different.
+5. Even though the no. of arguments are same, datatpe of that argument must be   different.
+6. Access specifiers can be same or different.
+7. Overloading we can achieve in the same class typically but we can also achieve    in the sub-class as well.
+8. its not about the no. of of arguments its about the type of arguments.
+10. Usually we achieve overloading in the same class.
+11. We can also achieve oveloading in the sub-class as well.
+
+________MethodOverriding_______
+Rules to be followed
+----------------------
+1. Methods name must be same
+2. Methods argument also must be same
+3. We cant achieve overriding in the same class
+4. Always we must use the sub-class to achieve overriding
+5. While overriding object creation matters
+6. While overriding return types must be same
+7. Access modifiers can be same or wider
+8. If you have public in the super class then definately you must go for public in the sub-class. there is no other choice, since public is the wider most.
+9. In case of super class reference and sub-class object with non-static methods then object matters not the reference.
+10. In case of super class reference and sub-class object with static methods then reference matters not the object.
+
+Abstraction
+-------------
+1. Abstraction is one of the basic pillars of object oriented programming language.
+2. Definition: Hiding the internal implemention details and just showing the functionality.
+3. `abstract` is a keyword in java.
+4. abstract class can also become a member of the java file
+5. for the abstract class also the javac compiler will be generating the .class file.
+6. abstract class can have any no. of abstract methods.
+7. abstract methods are the method which doesnt have a body.(must and and should doesnt contain a body)
+8. In java if any method doesnt have a body, then  that method must and should compulsory be declared as abstract.
+9. if any method which has a body ({}) we can consider it as `implemented method`, `defined method`, `concrete method`
+10. if a method is declared as abstract and if you are giving the body then definately you would get error.
+11. abstract class can contain any no. of abstract methods and non-abstract methods in order.
+12. If at least one abstract method is there in a class, then compulsory that class must be declare as abstract.
+13. abstract methods cannot have a body
+14. we cant able to create an object to the abstract class. i,e abstract class cant be instatiated
+15. abstract class can have any. no of constructors.
+16. abstract class can have any. no of IIBs.
+17. we are avoiding unneccessary or very crutial details for a method in the abstract class by making that method as abstract.
+
+Note: instance = object (both are the same)
+
+15. if any class is extending the abstract class then compulsory that class must implement all those abstract methods of the super class. otherwise you should declare the sub-class also as abstract.
+
+
+
+
+Exception Handling					
+------------------
+
+1. An Exception is an abnormal condition that disrupts the normal flow of program exection.
+2. In Java we have Exception handling Mechanism unlike C.
+3. In Java we can able handle the exception by using try and catch blocks.
+
+Note: In the Exception Handling Hierarchy "Throwable" class is the root.
+
+
+Two types of Exceptions
+--------------------------
+1. checked Exceptions 
+   Under the Exception class
+   Except The RuntimeException class
+   Remaining all the classes comes under checked ones.
+
+Note: checked Exceptions recognized at the compile time itself.
+
+2. Unchecked Exceptions 
+Under the Exception class 
+RuntimeException class 
+The classes that comes under RuntimeException are unchecked ones.
+
+Under the Error class
+The classes that comes under Error class are unchecked ones.
+
+Note: Recognized at the Runtime.
+
+Note: null represents absence of a value.
+
+  Advantage of Exception handling
+  -------------------------------
+ we can maintain the normal flow of the application.
+ 
+1. For abnormal condition corresponding exception object will be raised.
+2. Raised exception object should be handled to succesfully continue.
+Unchecked Exceptions
+---------------------------
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+int i = 10 / 0;
+
+
+Note: if you are calling anything on the null reference then you would get NullPointerException.
+
+
+Integer.parseInt("123"); -> is to convert the integer value that is in the form of String to the primitive int
+
+ try, catch -> both are keywords
+
+If you wanted to handle the raised Exception Object, you have to keep the exception causing statement within the try block.
+
+printStackTrace() -> details about the raised exception object. 
+                     Exception type, Line Number
+
+
+ - finally is a keyword.
+ - along with try and catch blocks we can use a finally block
+ - In order to close the resources and to complete neccessary tasks we use finally    block.
+ - Whether the exception is there or not and whether the raised exception gets    handled or not, once the control enters the try block compulsary finally block    will be execting withoug fail.
+ - for one pair of try and catch blocks you can keep only one finally block
+
+System.exit(0) - in this case only finally block will not execute. its like a emergency exit. immedeately the control will exit from the execution. without further execution.
+
+- if and only if the control enters the try block then only finally block will execute.
+- if in case the exception occurs before the try block then finally will not execute.
+- for one pair of try and catch blocks we can keep either 0 no. or max 1 no. of finally block, not more than that.
+- try alone is not possible.
+- catch alone also is not possible.
+- finally alone is not possible.
+- only catch and finally is also not possible.
+
+possiblilities
+----------------
+try-catch
+try-multiple catch blocks
+try-catch-finally
+try-multiple catches and one finally block
+try-finally
+
+- even though we have return statement before the finally block, due to the contract with finally block, compulsory finally block will be executing and then only cotrol returns to the caller without executing further statements.
+
+- ex.toString() -> returns String representation of the exception.
+
+- if the exception causing statement is un-checked type then compiler will not force you to keep try and catch blocks
+- if the exception causing statement is checked type then compiler will force you to keep try and catch or throws
+
+- try block can be empty if the catch is unchecked type
+- try block cant be empty if the catch is checked type
+
+- `throws` is a keyword in java.
+- instead of handling the exception we can hand over the resposibility of hadling the exception to some other thing. in that case we can use `throws` keyword
+- usually we use throws for a method, saying that this method will throw an exception(possibly checked exception) and informing the compiler ignore that exception so that it will not raise the exception at the compile time. even though we are not using try and catch blocks for the checked exception.
+
+- basically we use `throws` in order to escape the compilation error(checked exception) at the compile time.
+
+- if nobody is there to handle the thown exception(thrown by `throws`) then at last definately the exception remains.
+
+- `throw` is a keyword in java.
+- by using `throw` we can only raise the exception object explicitely to intentionally (when required) terminate the program.
+- explicitely even we can raise the Error Object as well by using `throw`
+
+Q: How to create your own exception class?
+We can create our own exception class by extending any of the unchecked also checked(use along throws) classes.
+But you cant extend directly Throwable or Exception compulary you have to use throws along with this.
+
+- `throw` statement must be the last statement in the current block.
+
+Q: What is semi-checked(partially checked)? and Why Throwable and Exception called as semi-checked?
+- Throwable and Exception classes are acting as unchecked in the case of try and catch.i,e try can empty if the catch argument is Throwable and Exception type.
+- Throwable and Exception classes are acting as checked in the case of methods i,e if we simply use `throws` keyword and mention Exception and Throwable then compulsary the caller method must be also declared with `throws` corresponding Exception or Throwable
+
+Note: This kind of behaviour with Exception and Throwable classes are called as semi-checked or partially checked.
+
+Note: consider source as test() and destination is main(String[] args)
+source -> Exception AND destination -> Exception CORRECT
+source -> Throwable AND destination -> Throwable CORRECT
+source -> Exception AND destination -> Throwable CORRECT
+source -> Throwable AND destination -> Exception INCORRECT
+
+Note: A checked exception is said to be fully checked if and only if all the child classes also checked type otherwise it is called as partially checked exception
+ex: IOException - fully checked
+    ArithmeticException - fully unchecked
+    Exception - partially checked
+    Throwable - partially checked
+    Error - unchecked
+    RuntimeException - fully unchecked
+
+Note: Exceptions generally caused due to the programming logic problems.
+      Ex: int i = 10 / 0; 
+      Errors are related to resources scarsity(lack of).
+      Ex:
+      main(String[] args)
+      {
+	main(args)
+      }
+
+Note: `throws` with unchecked type is un-neccessary and compiler will not force us to declare the caller method also with the corresponding `throws` i,e un-checked class with throws.
+
+___________________________________________________________________________
+
+MultiThreads
+------------
+
+Multitasking
+----------------------
+- Multitasking is a process of executing multiple tasks 
+  simultaneously. to utilize the CPU time effeciently. 
+  
+  Ex: While we are working in laptop, We can perform many tasks simultaniously
+      Task1: Write Code.
+      Task2: Listen to Music.
+      Task3: Download something from the internet.
+      Task4: Copy the contents from one location to another location. 
+
+  We get a feel of all the tasks are executing simultaniously.
+
+  Example software for multitasking - Eclipse(while you are writing code in the                                       realtime itself you the will gets compiled)
+
+Multitasking can be achieved in two ways:
+------------------------------------------
+1. Process-based Multitasking (Multiprocessing)
+2. Thread-based Multitasking (Multithreading)
+
+1) Process-based Multitasking (Multiprocessing)
+- Each process has an address in memory. In other words,
+  each process allocates a separate memory area.
+- A process is heavyweight.
+- Cost of communication between the process is high.
+- Switching from one process to another requires some time for saving and loading   registers, memory maps, updating lists, etc.
+
+2) Thread-based Multitasking (Multithreading)
+- Threads share the same address space.
+- A thread is lightweight.
+- Cost of communication between the thread is low.
+
+Note: At least one process is required for each thread.
+
+What is Multithreading in Java?
+- Multithreading in Java is a process of executing multiple threads 
+  simultaneously.
+
+Advantages of Java Multithreading
+-----------------------------------
+1) It doesn't block the user because threads are independent 
+and you can perform multiple operations at the same time.
+
+2) You can perform many operations together, so it saves time.
+
+3) Threads are independent, so it doesn't affect other threads
+ if an exception occurs in a single thread.
+
+Note: Multi-Threaded programming is also called as `parallel programming` or `concurrent programming`
+
+- By default all the core java programs runs by using only one thread which is the `main` thread itself if we do not create any other threads explicitely.
+
+Note: If only one thread is invloved in the execution then definately we get sequential output not the mixed output.
+
+Q: How to create a Thread in Java??
+   We can create a Thread in java in two ways
+   1. By Extending `Thread` class
+   2. By Implementing `Runnable` interface
+
+Note: If any class extends the Thread class then it becomes eligible(Specialized) for create a thread.
+
+- we should keep our tasks in the run() method that supposed to be executed by the thread. 
+- while creating an object to a class which is extending the Thread class, Thread is going to created.
+
+- There is a mechanism called Thread-Scheduler all the newly created thread supposed to register with the thread scheduler. then only the thread-scheduler will allocate the available CPU time for that thread.
+
+Note: Always you should call the start() method instead of directly calling the run() method. start() will call the run() method internally.
+
+- start() method will be internally calling the run() method. we should not call the run() directly.
+- when we call the start() method, the newly created thread will be registered with the thread-scheduler and its up the thread sheduler that how much of available CPU  time can be given to this new thread for execution.
+
+from the documentation
+-----------------------
+start()
+Causes this thread to begin execution; the Java Virtual Machine calls the run method of this thread.
+
+Second approach of creating a thread(best)
+---------------------------------------------
+- By implementing Runnable interface.
+- Runnable is the inbuilt interface
+
+Q: What is a Functional Interface?
+Ans: If any interface consisting of a single method. we can refere that interface as functional interface.
+Ex: Runnable -> abstract method - run() method
+
+
+Note: Best Because in case of implements Runnable we get a chance to extend another class but this opportunity will not be there if we go with extends Thread class.
+
+- In Thread class there is a method called `getName()` it returns the current thread name in form of a String. (directly we can call this method without any reference if we extend the Thread class).
+
+- We cant start a thread which is already started. if we do, we get IllegalThreadStateException
+
+- The childs threads will be automatically named like, Thread-0, Thread-1, Thread-2
+  and we can also change these names.
+
+- we can able to get name of the currently executing thread by using this statement
+  `Thread.currentThread().getName()` even though the current class is not extending    the Thread class.
+- if you use `implements Runnable` then definately you must use this syntax `Thread.currentThread().getName()` since Runnable interface doesnt have the getName() method.
+
+- Another advantage of using implements Runnable is that we can use the same object to create multiple Threads, all those threads will be executing the same run() method but different copies. This flexibility is not there while extending Thread class.
+
+- What is Daemon Thread?
+  1. Daemon thread is a thread
+  2. Daemon thread's life is depending on its parent thread.
+  3. When parent thread is leaving(exiting)(after finishing) the execution demon      thread also must leave the execution immediately.
+
+
+Note: The opposite of Daemon thread is user thread even though parent thread is
+  leaving from the execution, child finishing its execution.
+
+- By default in java the threads we create are user threads only.
+
+Note: user thread is not Daemon thread. 
+
+- Any(user) thread can be converted daemon thread before calling the start() method.
+
+- Any(daemon) can be converted user thread before calling the start() method.
+
+Note: Once you start the thread it cant be converted to either Daemon or User. if you try to do, you will get Exception (IllegalThreadStateException)
+
+Note: main thread cant be converted into daemon, bcz its already started by the JVM
+
+-  Every thread will be having an unique id. particular thread can be referred
+   through its id. two threads will not be having the same id.
+   id is a long number and random. id is just read only we cant modify.
+
+- Each Thread will be having a priority. Prioriy is an integer number ranging from    1 to 10
+  1 is min, 5 is normal, 10 is max priority. 
+
+Note: The default priority of the main thread is normal priority.
+
+- We can make a request to thread scheduler for the priority.
+  but we cant confirm that every time only higher priority thread will only           executes. because its up to the thread scheduler and it will decide. but most       of the time it will consider our request.
+
+Note: child thread will be receiving its parent thread priority.
+      in other words, child thread priority by default will be same as its parent       thread priority.
+
+- By using setName(String) we can change the thread name
+
+Note: Even we can change the name of the main thread also.
+
+Note: At any point of time(after we started the thread) we can change the name of a       thread.
+
+- we can change the priority of the thread by using setPriority(int) ranging from 1 to 10.
+
+Note: if you are exceeding or if you are decresing the value out of 1 and 10 you will get IllegalArgumentException.
+
+Note: if any field which is public static and final as a standard we suppose to       represent it using all the characters in the uppercase and `_` as a       seperator.
+  Ex: inbuilt (perfect constants) 
+      these are available in the Thread class.
+      MIN_PRIORITY
+      NORM_PRIORITY        
+      MAX_PRIORITY
+
+Note: Through the constructor also we can able to specify the name for a Thread.
+      in case of extends Thread and we should invoke this constructor
+      Thread(String name)
+      Allocates a new Thread object.
+      
+Note: in case of implements then we should invoke this constructor
+      Thread(Runnable target, String name)
+      Allocates a new Thread object.
+
+
+Note: user thread will not be dependent upon its parent execution.
+      i,e even though the parent comes out from the execution earlier, the user       thread doesnt have to come out from its execution. it will complete its task       then comes out, not immediately after the main thread.
+
+- We can convert the user thread into daemon thread, but should be before calling the start() method
+
+- In case daemon thread immediately after the parent thread execution(after parent   thread finished its task) the child thread(daemon) has to immeately come out from   the execution even though if it is having some more execution.
+
+- join() -> will cause InterruptedException so we usually keep within try and catch block.
+- if we call the join() method on any thread, first that thread will be finishing its execution. then it will be joining with the other thread.
+
+Note: InterruptedException is the checked exception
+
+Note: for the Utility code we can create a seperate class called Util. so that we       can increase the readability of the main code.
+      Ex: for the sleep methods which requires try and catch we can create and call           them from a seperate Util class.
+
+Q: When a Thread is sleeping can we able to iterrupt it?
+Ans: Yes. using interrupt() method. When the thread is in sleep if we call      interrupt() on that thread, then that thread comes away from the sleep with an      exception.
+
+Note: Exception in one thread will not affect the other thread. the other thread       will be finishing its task without any problem.
+
+Q: auto-start in threads?
+Ans: while creating the thread itself using the constructor we can start the thread      by calling start(). this mechanism is refered to as auto-start.
+
+
+1. Always recommended to share one object with more threads.
+2. If we share one object among multiple threads then that shared object
+   usage will be increasing.
+3. Problem: If more threads access one object simultaneously there is high    chance of data corruption.
+4. If multiple thread access the same object simultaneously
+   object scope will increase but data corruption happens
+   that is why we should not allow simultaneously accessing
+   one object by multiple threads.
+
+Q: What is synchronization? How to use it?
+Ans: In order to avoid inconsistant data, or data-corruption which can be caused by      the access of multiple threads on the same object resource, we can use      synchronization concept.
+
+- We can achieve synchronization by `synchronize` keyword.
+- There is a concept called object lock.
+- whenever we create an object, for that object, object lock is created.
+- we can declare the entire method or a block in the method as synchronize.
+- If any threads wants to enter the synchronized block then that thread compulsory   must obtaining that object lock, then only it can enter that block or method   which is synchronized.
+- The lock can be aquired by only one thread at a time. 
+- Two threads cant aquire the same object lock at the same time.
+- After one thread finishing the execution from the synchronized block it will   release that aquired lock. and then that released will be aquired by another   waiting thread.
+- Once another waiting thread aquired the lock, no other thread can enter that   synchronized block until it releases the lock.
+- Once it releases the lock the other waiting thread will aquire that lock and   keeps on executing and releases the lock at last.
+- This process avoids from multiple threads accessing the same resource   simultaniously, thus we avoid data insconsitancy or data corruption. 
+
+
+Array
+---------
+1. Array is a collection of elements.
+2. Arrays are also objects in java.
+3. Why do we need arrays? Ans: instead of using so many variables to store same kind of data. we can make use of array to store multiple elements of the same type.
+4. Array homogeneous.(we cant insert different types of elements).
+5. declaring an array. 
+   Syntax: datatype[] reference
+   Ex:     int[] array;
+Note: `[]` represents an array(representation of the array).
+6. Initializing an array
+   first we have to create an array object -> 
+   Syntax:new datatype[size]
+   Ex:new int[5]
+   assign the array object to the reference
+   syntax: arrayReference = new datatype[size[int]]
+   ex: array = new int[5]
+7. array has indexes and the index will be starting from 0
+8. How to intialize the indexes of an array?
+   Ex: 
+   int[] array = new int[5]
+   _0__1__2__3__4
+    0  0  0  0  0 -> Intialized with the default value(according the datatype)
+   array[0] = 10;
+   array[1] = 20;
+   array[2] = 30;
+   array[3] = 40;
+   array[4] = 50;
+9. length is property in case of arrays. using this property we can find out the size of an array.
+
+Note: length and size both are the same in case of arrays.
+
+Note: if you are calling anything on the null refererence you will get an Exception(NullPointerException)
+10. possible ways of declaring an array
+    int x[];
+    int []x;
+    int[] x;
+    int[]x;
+11. If you are trying to access the index which is not available in the array you will get ArrayIndexOutOfBoundsException
+Ex: int x[] = new int[2];
+    x[2] = 20;//ArrayIndexOutOfBoundsException
+12. Can we create an array with the size 0?
+    Yes.We can able to create an array with length 0. but     there wont be any index available.
+13. Can we create an array with the negative size? 
+    No. you will get NegativeArraySizeException
+14. In a single line by using `,` as a seperator we can declare any no. of array reference variables.
+    Ex: int[] x, y, z;
+15. In a single line by using `,` as a seperator we can     declare any no. of array reference variables and also        initialize it.
+    Ex: int[] x = new int[2], y, z = new int[12];
+Note: if you want to declare and intialize both array reference variables and also the primitve int variables then you should use this syntax.
+Ex: int x[], y;
+    x = new int[2];
+    y = 9; 
+if you declare only the array datatype then all the variables you declare would be of the array reference types by default
+Ex: int[] x, y, z;//all these are references only.
+16. System.out.println(Arrays.toString(x));//you will get String representation of the array content in the form of a collection within the `[]` brackets.
+
+Note: Arrays is the inbuilt class which is available in the util package.
+
+Note: toString is the static method which is available in the Arrays class. which takes the reference of any array type and returns: String representation of the array content in the form of a collection within the `[]` brackets.
+Ex:
+import java.util.Arrays;
+public class N
+{
+	public static void main(String[] args)
+	{
+		int []x = new int[5];
+		x[0] = 10;
+		x[1] = 20;
+		x[2] = 30;
+		x[3] = 40;
+		x[4] = 50;
+		System.out.println(Arrays.toString(x));//collection
+	}
+}
+o/p
+[10, 20, 30, 40, 50]
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
